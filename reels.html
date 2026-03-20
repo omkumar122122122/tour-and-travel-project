@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Reels</title>
+  <link rel="stylesheet" href="frontend/css/global.css" />
+  <link rel="stylesheet" href="frontend/css/reels.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- REELS SECTION -->
+  <section class="reels-section">
+
+    <div class="reels-header fade-up">
+      <div>
+        <h2 class="reels-title">Travel Reels</h2>
+        <p class="reels-subtitle">Real moments from real travelers around the world</p>
+      </div>
+      <button class="btn btn-primary" id="uploadBtn">
+        <i class="fa-solid fa-circle-plus"></i> Upload Reel
+      </button>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar reels-search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="reelSearch" placeholder="Search by place... e.g. Manali, Shimla" />
+    </div>
+
+    <!-- Reels Feed -->
+    <div class="reels-feed" id="reelsFeed">
+      <!-- Reels injected by JS -->
+    </div>
+
+  </section>
+
+  <!-- Upload Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box card">
+
+      <button class="modal-close" id="modalClose">&times;</button>
+      <h3>Upload Your Travel Reel</h3>
+
+      <input type="file" id="videoInput" accept="video/*" class="form-input" />
+      <video id="previewVideo" controls style="display:none; width:100%; margin:10px 0; border-radius:12px;"></video>
+
+      <input type="text" class="form-input" id="reelTitle" placeholder="Title" />
+      <input type="text" class="form-input" id="reelLocation" placeholder="Location" />
+      <textarea class="form-input" id="reelCaption" placeholder="Caption..." rows="3"></textarea>
+
+      <button class="btn btn-primary full-btn" id="submitReel">Post Reel</button>
+
+    </div>
+  </div>
+
+  <!-- Reel Viewer Modal -->
+  <div class="viewer-overlay" id="viewerOverlay">
+    <button class="viewer-close" id="viewerClose">&times;</button>
+    <button class="viewer-nav left" id="viewerPrev">&#8249;</button>
+
+    <div class="viewer-content">
+      <div class="viewer-video-wrap" id="viewerVideoContainer"></div>
+      <div class="viewer-info">
+        <div class="viewer-user">
+          <div class="avatar" id="viewerAvatar"></div>
+          <div>
+            <p class="viewer-name" id="viewerName"></p>
+            <p class="viewer-location" id="viewerLocation"></p>
+          </div>
+        </div>
+        <p class="viewer-caption" id="viewerCaption"></p>
+        <div class="viewer-actions">
+          <button class="action-btn like-btn" id="viewerLike">&#9829; <span id="viewerLikeCount"></span></button>
+          <button class="action-btn" id="shareBtn">Share</button>
+        </div>
+      </div>
+    </div>
+
+    <button class="viewer-nav right" id="viewerNext">&#8250;</button>
+  </div>
+
+  <script src="frontend/js/global.js"></script>
+  <script src="frontend/js/reels.js"></script>
+</body>
+</html>
