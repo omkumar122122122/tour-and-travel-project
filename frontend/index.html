@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wander AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="ambient ambient-three"></div>
+
+    <header class="topbar fade-up">
+      <a href="#home" class="brand-mark">
+        <div class="brand-icon float">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21.7 2.3a1 1 0 0 0-1.02-.24L2.92 8.4a1 1 0 0 0 .08 1.9l7.28 2.38 2.39 7.3a1 1 0 0 0 .9.69h.06a1 1 0 0 0 .91-.58l7.4-16.77a1 1 0 0 0-.24-1.02Z"></path>
+          </svg>
+        </div>
+        <div>
+          <p class="brand-title">Wander AI</p>
+          <span class="brand-subtitle">Smart Travel Companion</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle btn" type="button" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links">
+        <a class="nav-pill active" href="#home">Home</a>
+        <a class="nav-pill" href="#guide">AI Guide</a>
+        <a class="nav-pill" href="#reels">Reel</a>
+        <a class="nav-pill" href="#match">Match</a>
+        <a class="nav-pill" href="#plan">Plan</a>
+        <a class="nav-pill" href="#profile">Profile</a>
+      </nav>
+
+      <div class="profile-chip">
+        <div class="notification-dot"></div>
+        <img class="profile-avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="User profile">
+        <div>
+          <p class="profile-label">Hello, Alex!</p>
+          <span class="profile-meta">Verified explorer</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="home-grid" id="home">
+      <aside class="sidebar glass-panel fade-up">
+        <div class="sidebar-menu">
+          <a class="sidebar-link active" href="#home"><strong>Dashboard</strong><span>[ ]</span></a>
+          <a class="sidebar-link" href="#guide"><strong>Explore</strong><span>&rsaquo;</span></a>
+          <a class="sidebar-link" href="#plan"><strong>My Trips</strong><span>&rsaquo;</span></a>
+          <a class="sidebar-link" href="#plan"><strong>Itinerary</strong><span>&rsaquo;</span></a>
+          <a class="sidebar-link" href="#match"><strong>Bookings</strong><span>&rsaquo;</span></a>
+          <a class="sidebar-link" href="#guide"><strong>AI Companion</strong><span>&rsaquo;</span></a>
+          <a class="sidebar-link" href="#profile"><strong>Settings</strong><span>&rsaquo;</span></a>
+        </div>
+
+        <div class="promo-card glass-panel">
+          <div>
+            <h3>Go Premium</h3>
+            <p>Get 50% off verified trip matching and smart planning tools.</p>
+          </div>
+          <button class="btn" type="button">Upgrade</button>
+        </div>
+      </aside>
+
+      <section class="content-column">
+        <section class="hero-banner glass-panel fade-up">
+          <div class="hero-copy">
+            <h1>Welcome Back, Alex!</h1>
+            <p>Let's Explore the World.</p>
+            <div class="hero-search">
+              <div class="hero-search-field">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M10.5 3a7.5 7.5 0 1 0 4.76 13.3l4.22 4.22 1.42-1.42-4.22-4.22A7.5 7.5 0 0 0 10.5 3Zm0 2a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11Z"></path>
+                </svg>
+                <input type="text" placeholder="Search Destination, Hotel, Activity...">
+              </div>
+              <button class="btn hero-search-btn" type="button">Search</button>
+            </div>
+          </div>
+          <div class="hero-art"></div>
+        </section>
+
+        <section class="section-card glass-panel fade-up" id="guide">
+          <div class="section-head">
+            <h2>Travel Categories</h2>
+            <a href="#home">See All</a>
+          </div>
+          <div class="categories-row">
+            <article class="category-card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Beaches"><strong>Beaches</strong></article>
+            <article class="category-card"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80" alt="Mountains"><strong>Mountains</strong></article>
+            <article class="category-card"><img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=600&q=80" alt="Cities"><strong>Cities</strong></article>
+            <article class="category-card"><img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=600&q=80" alt="Adventure"><strong>Adventure</strong></article>
+          </div>
+        </section>
+
+        <section class="section-card glass-panel fade-up" id="reels">
+          <div class="section-head">
+            <h2>Recommended Places</h2>
+            <a href="#home">See All</a>
+          </div>
+          <div class="recommended-row">
+            <article class="place-card bali"><h3>Bali, Indonesia</h3><p>Paradise Island</p><span class="rating-pill">4.8 &#9733;</span></article>
+            <article class="place-card alps"><h3>Swiss Alps</h3><p>Mountain View</p><span class="rating-pill">4.9 &#9733;</span></article>
+            <article class="place-card tokyo"><h3>Tokyo, Japan</h3><p>City Lights</p><span class="rating-pill">4.7 &#9733;</span></article>
+          </div>
+        </section>
+
+        <section class="dashboard-bottom">
+          <article class="trip-schedule glass-panel fade-up" id="plan">
+            <div class="section-head">
+              <h2>Your Itinerary</h2>
+              <a href="#home">May 2025</a>
+            </div>
+            <div class="trip-schedule-grid">
+              <div class="timeline-list">
+                <div class="timeline-item"><span class="time-tag">10:00 AM</span><div><strong>Hotel Check-In</strong><p>Arrival and room access confirmed.</p></div></div>
+                <div class="timeline-item"><span class="time-tag">1:00 PM</span><div><strong>City Tour</strong><p>Local guide and food stop included.</p></div></div>
+                <div class="timeline-item"><span class="time-tag">7:00 PM</span><div><strong>Beach Dinner</strong><p>Price-safe booking with route tracking.</p></div></div>
+              </div>
+              <div class="mini-calendar">
+                <div class="calendar-head"><strong>May 2025</strong><span>&rsaquo;</span></div>
+                <div class="calendar-grid">
+                  <span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span>
+                  <span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span>
+                  <span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span>
+                  <span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="budget-card glass-panel fade-up">
+            <div class="section-head"><h2>Travel Budget</h2></div>
+            <div class="budget-ring"><div><strong>75%</strong><span>Used</span></div></div>
+            <div class="budget-meta">$1,250 / $1,700</div>
+            <div class="budget-subtext">Eco-routed transfers saved points and reduced cost spikes.</div>
+          </article>
+        </section>
+
+        <section class="status-summary glass-panel fade-up">
+          <div class="section-head"><h2>Active Trip Summary</h2><a href="#plan">Starts in 2 days</a></div>
+          <p>Your Jaipur Culture Loop is locked with a verified co-traveler and low-traffic route optimization.</p>
+          <div class="status-grid">
+            <div><strong>4D / 3N</strong><p>Duration</p></div>
+            <div><strong>2 Travelers</strong><p>Shared trip</p></div>
+            <div><strong>$420</strong><p>Estimated spend</p></div>
+          </div>
+        </section>
+
+        <section class="suggested-summary glass-panel fade-up">
+          <div class="section-head"><h2>Suggested Trips</h2><a href="#match">If No Trip Selected</a></div>
+          <div class="suggestion-mini-row">
+            <article class="suggestion-mini"><strong>Kerala Slow Travel Escape</strong><p>Backwaters, spice trails, and verified comfort stays.</p><span class="cost-tag">$510</span></article>
+            <article class="suggestion-mini"><strong>Himalayan Remote Work Trek</strong><p>Balanced adventure pacing with safe pickup support.</p><span class="cost-tag">$680</span></article>
+            <article class="suggestion-mini"><strong>Tokyo Night Pulse</strong><p>Food reels, nightlife, and scam-safe fare alerts.</p><span class="cost-tag">$1,180</span></article>
+          </div>
+        </section>
+
+        <section class="eco-summary glass-panel fade-up">
+          <div class="section-head"><h2>Eco-Points Tracker</h2><a href="#home">Sustainable Travel</a></div>
+          <div class="eco-box">
+            <div class="eco-circle"><div><strong>860</strong><span>Green Points</span></div></div>
+            <div><strong>Low-carbon travel unlocked</strong><p>You earned points from local stays, shared transfers, and optimized itinerary choices.</p></div>
+          </div>
+        </section>
+
+        <section class="traveler-suggestions glass-panel fade-up" id="match">
+          <div class="section-head"><h2>Co-Traveler Suggestions</h2><a href="#profile">Verified Only</a></div>
+          <div class="traveler-row">
+            <article class="traveler-mini">
+              <div class="traveler-head"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=240&q=80" alt="Aarav"><div><strong>Aarav Mehta</strong><p>Delhi, India</p></div></div>
+              <span class="verified-badge">Verified</span>
+              <p>Food trails, medium pace, budget flexible.</p>
+              <span class="trust-score">Trust Score: 4.8 / 5</span>
+            </article>
+            <article class="traveler-mini">
+              <div class="traveler-head"><img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=240&q=80" alt="Sana"><div><strong>Sana Khan</strong><p>Mumbai, India</p></div></div>
+              <span class="verified-badge">Verified</span>
+              <p>Comfort trips, city exploring, punctual and safe.</p>
+              <span class="trust-score">Trust Score: 4.9 / 5</span>
+            </article>
+            <article class="traveler-mini">
+              <div class="traveler-head"><img src="https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=240&q=80" alt="Kabir"><div><strong>Kabir Nair</strong><p>Bengaluru, India</p></div></div>
+              <span class="verified-badge">Verified</span>
+              <p>Adventure routes, eco-first planning, fast pace.</p>
+              <span class="trust-score">Trust Score: 4.7 / 5</span>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <aside class="right-column">
+        <section class="assistant-card glass-panel fade-up">
+          <div class="section-head"><h2>AI Travel Assistant</h2><a href="#home">&times;</a></div>
+          <p>Hi! I'm your AI companion. How can I help you?</p>
+          <div class="assistant-actions">
+            <button type="button">Plan My Trip</button>
+            <button type="button">Budget Guide</button>
+            <button type="button">Nearby Places</button>
+            <input class="assistant-input" type="text" placeholder="Ask me anything...">
+          </div>
+          <div class="assistant-robot"></div>
+        </section>
+
+        <section class="weather-card glass-panel fade-up" id="profile">
+          <h3>Weather in Bali</h3>
+          <div class="weather-main">
+            <strong>28&deg;C</strong>
+            <div><div>Sunny</div><div>Comfort travel day</div></div>
+          </div>
+          <div class="weather-days">
+            <div><strong>Wed</strong><p>28&deg;C</p></div>
+            <div><strong>Thu</strong><p>28&deg;C</p></div>
+            <div><strong>Fri</strong><p>27&deg;C</p></div>
+          </div>
+        </section>
+      </aside>
+    </main>
+
+    <button class="sos-bubble btn" type="button" aria-label="Emergency SOS">
+      <span class="sos-label">Shadow Guardian</span>
+      <strong>SOS</strong>
+    </button>
+  </div>
+</body>
+<script src="js/global.js"></script>
+<script src="js/index.js"></script>
+</html>
